@@ -1,0 +1,58 @@
+.commentItem:before {
+  bottom: 47px;
+  box-sizing: border-box;
+  color: #bbb;
+  content: '\201C';
+  display: block;
+  height: 96px;
+  left: 55px;
+  position: absolute;
+  right: 515.391px;
+  text-size-adjust: 100%;
+  top: 20px;
+  width: 24.6094px;
+  column-rule-color: #bbb;
+  perspective-origin: 12.2969px 48px;
+  transform-origin: 12.2969px 48px;
+  border: 0 none #bbb;
+  font: normal normal normal normal 60px/96px Georgia, serif;
+  margin: -25px 0 0 -40px;
+  outline: #bbb none 0;
+}
+
+.commentItem:after {
+  bottom: -30px;
+  box-sizing: border-box;
+  color: #fff;
+  content: '';
+  display: block;
+  height: 30px;
+  left: 80px;
+  position: absolute;
+  right: 445px;
+  text-size-adjust: 100%;
+  width: 30px;
+  column-rule-color: #fff;
+  perspective-origin: 15px 15px;
+  transform-origin: 15px 15px;
+  filter: drop-shadow(rgba(0, 0, 0, .0980392) 2px 2px 1px);
+  border-top: 30px solid #fff;
+  border-right: 30px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  font: normal normal normal normal 13px/20.8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: #fff none 0;
+}
+
+.slick-slide {
+	margin: 0 10px;
+  height: 'auto';
+}
+/* the parent */
+.slick-list {
+	margin: 0 -10px;
+}
+
+.slick-slider, .slick-list, .slick-track {
+  height: 100%;
+}
