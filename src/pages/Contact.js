@@ -5,9 +5,9 @@ import { varFadeInRight, varFadeInLeft, varFadeInUp, MotionInView } from 'compon
 
 // ----------------------------------------------------------------------
 
-export default function AboutUs() {
+export default function Contact() {
   return (
-    <Container sx={{ marginTop: '250px' }}>
+    <Container title="Flat Packs | MineSites | Contact" id="move_top" sx={{ marginTop: '250px' }}>
       <Grid container spacing={3} mb={5}>
         <Grid item md={6} sm={12}>
           <MotionInView variants={varFadeInLeft}>
