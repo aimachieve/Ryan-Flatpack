@@ -38,7 +38,7 @@ export default function MainFooter() {
                   lineHeight: 1.15,
                   letterSpacing: 0,
                 }}>
-                  About Flat Packs WA:
+                  About Flat Packs Mining:
                 </Typography>
                 <Typography sx={{
                   color: '#eeeeee',
@@ -52,7 +52,7 @@ export default function MainFooter() {
                 </Stack>
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Icon icon={email} style={{ color: '#eeeeee', width: '30px', height: '30px' }} />
-                  <a href="mailto:sales@flatpackswa.com.au" style={{ color: '#eee' }}>Email: sales@flatpackswa.com.au</a>
+                  <a href="mailto:info@flatpackswa.com.au" style={{ color: '#eee' }}>Email: info@flatpacksmining.com.au</a>
                 </Stack>
               </Stack>
             </MotionInView>
@@ -111,7 +111,7 @@ export default function MainFooter() {
                   borderLeft: '5px solid #eee',
                   color: '#eee',
                 }}>
-                Flat Packs WA
+                Flat Packs Mining
               </a>
             </MotionInView>
           </Grid>

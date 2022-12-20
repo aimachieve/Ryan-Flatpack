@@ -11,3 +11,4 @@ export { default as LandingEquipment } from './LandingEquipment';
 export { default as LandingHowWork } from './LandingHowWork';
 export { default as LandingDamage } from './LandingDamage';
 export { default as LandingConnect } from './LandingConnect';
+export { default as LandingQuote } from './LandingQuote';

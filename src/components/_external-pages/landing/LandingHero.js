@@ -7,39 +7,21 @@ import { Button, Box, Link, Container, Typography, Stack, Select, MenuItem, Text
 import { varFadeIn, varFadeInUp, varWrapEnter, varFadeInRight } from '../../animate';
 // ----------------------------------------------------------------------
 
-const RootStyle = styled(motion.div)(({ theme }) => ({
-  position: 'relative',
-  paddingTop: "182px",
-}));
-
-const ContentStyle = styled(motion.div)(({ theme }) => ({
-  zIndex: 10,
-  margin: 'auto',
-  textAlign: 'center',
-  position: 'relative',
-}));
-
-// ----------------------------------------------------------------------
-
 export default function LandingHero() {
   return (
     <>
-      <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-            <video src="/images/top-video.mp4" autoPlay loop style={{
-              width: '100%',
-              height: 'calc(100%-182px)',
-              position: 'relative',
-            }}/>
-          {/* <ContentStyle>
-            <motion.div variants={varFadeInRight}>
-              <Typography sx={{ color: 'common.white', fontSize: '28px' }}>
-                We will Screw Down Our Suppliers, and Pass on the Savings to You!
-                <br />
-                <span style={{ color:"#32b34a" }}>We Even Supply you the Screws!</span>
-              </Typography>
-            </motion.div>
-          </ContentStyle> */}
-      </RootStyle>
+      <div className='myvideo'>
+        <video src="/images/top-video.mp4" autoPlay loop muted />
+        <div className="content">
+          <motion.div variants={varFadeInUp}>
+            <Typography sx={{ color: 'common.white', fontSize: '70px', padding: 'auto' }}>
+              Custom Made Cabinetry for 
+              <br />
+              <span style={{ color: "#32b34a" }}>Australian MineSites!</span>
+            </Typography>
+          </motion.div>
+        </div>
+      </div>
     </>
   );
 }

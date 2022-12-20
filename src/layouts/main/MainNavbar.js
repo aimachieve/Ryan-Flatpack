@@ -18,8 +18,8 @@ import useAuth from '../../hooks/useAuth';
 
 // ----------------------------------------------------------------------
 
-const APP_BAR_MOBILE = 182;
-const APP_BAR_DESKTOP = 182;
+const APP_BAR_MOBILE = 110;
+const APP_BAR_DESKTOP = 130;
 
 const ToolbarStyle = styled(Toolbar)(({ theme }) => ({
   height: APP_BAR_MOBILE,
@@ -70,29 +70,6 @@ export default function MainNavbar() {
             // marginTop: { xs: '182px' }
           }}
         >
-          {
-            !isOffset &&
-            <Stack direction="row" alignItems="center" justifyContent="space-between" mb={3}>
-              <a
-                href="tel:0894182833"
-                style={{
-                  fontSize: '13px',
-                  textAlign: 'center',
-                  position: 'relative',
-                  color: '#31b34a',
-                  transition: 'transform 0.3s',
-                  textDecoration: 'none'
-                }}>
-                Phone (08) 9418 2833
-              </a>
-              <Box sx={{ flexGrow: 1 }} />
-
-              <Stack direction="row" spacing={1}>
-                <Button variant="contained" sx={{ backgroundColor: '#333333', borderRadius: '1px' }}>Sign Up</Button>
-                <Button variant="contained" sx={{ backgroundColor: '#333333', borderRadius: '1px' }}>Login</Button>
-              </Stack>
-            </Stack>
-          }
           <Stack direction="row" alignItems="center" justifyContent="space-between">
             <RouterLink to="/" style={{ textDecoration: 'none' }}>
               <Logo
@@ -119,7 +96,7 @@ export default function MainNavbar() {
                         color: '#31b34a',
                       }
                     }}>
-                      Custom Made Cabinetry for WA's Cabinet <br />Makers & Builders
+                      100% Australian Designed & Constructed Custom <br />Minesites Cabinets
                     </Typography>
                   </MHidden> :
                   <MHidden width="mdDown">
@@ -136,7 +113,7 @@ export default function MainNavbar() {
                         color: '#31b34a',
                       }
                     }}>
-                      Custom Made Cabinetry for WA's Cabinet Makers & Builders
+                      100% Australian Designed & Constructed Custom Minesite Cabinets
                     </Typography>
                   </MHidden>
               }

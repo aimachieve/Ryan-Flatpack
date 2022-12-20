@@ -79,7 +79,7 @@ export default function LoadingScreen({ ...other }) {
           repeat: Infinity
         }}
       >
-        <Logo sx={{ width: 64, height: 64 }} />
+        <Logo sx={{ width: 200, height: 50 }} />
       </motion.div>
 
       <Box
@@ -92,8 +92,8 @@ export default function LoadingScreen({ ...other }) {
         }}
         transition={{ ease: 'linear', duration: 3.2, repeat: Infinity }}
         sx={{
-          width: 100,
-          height: 100,
+          width: 200,
+          height: 200,
           borderRadius: '25%',
           position: 'absolute',
           border: (theme) => `solid 3px ${alpha(theme.palette.primary.dark, 0.24)}`
@@ -114,8 +114,8 @@ export default function LoadingScreen({ ...other }) {
           repeat: Infinity
         }}
         sx={{
-          width: 120,
-          height: 120,
+          width: 220,
+          height: 220,
           borderRadius: '25%',
           position: 'absolute',
           border: (theme) => `solid 8px ${alpha(theme.palette.primary.dark, 0.24)}`

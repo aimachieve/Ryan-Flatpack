@@ -50,12 +50,12 @@ export default function Contact() {
                 }}>
                   Email:
                 </Typography>
-                <a href="mailto:sales@flatpackswa.com.au" style={{
+                <a href="mailto:info@flatpacksmining.com.au" style={{
                   fontSize: '15pt',
                   color: '#111',
                   fontWeight: 500,
                 }}>
-                  sales@flatpackswa.com.au
+                  info@flatpacksmining.com.au
                 </a>
               </Stack>
             </Stack>

@@ -1,15 +1,10 @@
 {
-  "short_name": "Minimal App",
+  "short_name": "Minesites App",
   "name": "Flat Packs Mine Sites",
   "icons": [
     {
-      "src": "favicon/android-chrome-192x192.png",
+      "src": "favicon/192.webp",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "favicon/android-chrome-512x512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ],

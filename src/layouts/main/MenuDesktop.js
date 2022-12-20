@@ -7,7 +7,7 @@ import arrowIosUpwardFill from '@iconify/icons-eva/arrow-ios-upward-fill';
 import arrowIosDownwardFill from '@iconify/icons-eva/arrow-ios-downward-fill';
 // material
 import { styled } from '@material-ui/core/styles';
-import { Box, Link, Grid, List, Stack, Popover, ListItem, ListSubheader, CardActionArea } from '@material-ui/core';
+import { Box, Link, Grid, List, Stack, Popover, ListItem, ListSubheader, CardActionArea, Button } from '@material-ui/core';
 
 // ----------------------------------------------------------------------
 
@@ -232,7 +232,20 @@ export default function MenuDesktop({ isOffset, isHome, navConfig }) {
   };
 
   return (
-    <Stack direction="row">
+    <Stack direction="row" justifyContent="center" alignItems="center">
+      <a
+        href="tel:0894182833"
+        style={{
+          fontSize: '16px',
+          textAlign: 'center',
+          position: 'relative',
+          color: '#31b34a',
+          transition: 'transform 0.3s',
+          textDecoration: 'none',
+          marginRight: '20px'
+        }}>
+        Phone (08) 9418 2833
+      </a>
       {navConfig.map((link) => (
         <MenuDesktopItem
           key={link.title}
@@ -245,6 +258,24 @@ export default function MenuDesktop({ isOffset, isHome, navConfig }) {
           isHome={isHome}
         />
       ))}
+
+      <Button variants="contained" sx={{
+        backgroundColor: "#31b34a",
+        color: 'white',
+        borderRadius: 'none',
+        fontSize: '15px',
+        fontWeight: 500,
+        lineHeight: 1.4,
+        padding: '15px 20px',
+        '&:hover': {
+          textDecoration: 'none',
+          color: 'white',
+          backgroundColor: '#333333'
+        },
+        marginLeft: '20px'
+      }}>
+        GET A QUOTE
+      </Button>
     </Stack>
   );
 }

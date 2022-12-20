@@ -9,7 +9,8 @@ import {
   LandingAbout,
   LandingCategory,
   LandingDamage,
-  LandingConnect
+  LandingConnect,
+  LandingQuote
 } from '../components/_external-pages/landing';
 
 // ----------------------------------------------------------------------
@@ -21,7 +22,8 @@ const RootStyle = styled(Page)({
 const ContentStyle = styled('div')(({ theme }) => ({
   overflow: 'hidden',
   position: 'relative',
-  backgroundColor: theme.palette.background.default
+  backgroundColor: theme.palette.background.default,
+  marginTop: '-7px'
 }));
 
 // ----------------------------------------------------------------------
@@ -31,9 +33,10 @@ export default function LandingPage() {
     <RootStyle title="Flat Packs | MineSites" id="move_top">
       <LandingHero />
       <ContentStyle>
-        <LandingAbout />
+        {/* <LandingAbout /> */}
         <LandingHowWork />
         <LandingCategory />
+        <LandingQuote />
         {/* <LandingEquipment /> */}
         {/* <LandingDamage /> */}
         {/* <LandingConnect /> */}
